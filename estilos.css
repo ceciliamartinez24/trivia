@@ -1,0 +1,76 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caja principal */
+#inicio, #juego, #resultado, #dificultad {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    color: #1e3a5f;
+}
+
+/* Botones */
+button {
+    background-color: #2f6fdb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* Hover */
+button:hover {
+    background-color: #1c4fa3;
+}
+
+/* Contenedor de opciones */
+#opciones {
+    margin-top: 15px;
+}
+
+/* Pregunta */
+#pregunta {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Contador */
+#contador {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: column; /* 👈 CLAVE */
+    align-items: center;
+    margin-top: 15px;
+}
+
+#opciones button {
+    width: 100%;
+    max-width: 250px;
+}
+
+#inicio, #dificultad, #juego, #resultado {
+    display: none; /* 👈 TODOS ocultos por defecto */
+}

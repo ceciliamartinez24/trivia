@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trivia</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
-   <div id="inicio">
+   <div id="inicio" style="display: block;">
         <h1>Bienvenidos a esta trivia!</h1>
         <h4>Seleccione una categoria:</h4>
 
-        <div id="categorias"></div>
+        <div id="categorias" style="display: block;"></div>
         <p id="error" style="display:  none;">Error</p>
     </div> 
 
@@ -20,16 +21,18 @@
         <div id="btnNiveles"></div>
     </div>
 
+    <div id="opciones"></div>
+
     <div id="juego" style="display: none;">
         <p id="progreso">Preguntas: </p>
+        <div id="pregunta"></div>
         <p>Tiempo restante: <span id="contador">5</span></p>
-        <h3 id="pregunta"></h3>
     </div>
 
-    <div id="resultado" style="display: none;">
+    <div id="resultados" style="display: none;">
         <h2>Resultados:</h2>
         <p id="correctas">Correctas: </p>
-        <p id="incorectas">Incorrectas: </p>
+        <p id="incorrectas">Incorrectas: </p>
         <p id="noRespondidas">No respondidas: </p>
     </div>
 
